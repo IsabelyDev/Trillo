@@ -1,16 +1,3 @@
-/*
-COLORS
-Primary: #eb2f64
-Primary light: #FF3366
-Primary dark: #BA265D
-Grey light 1: #faf9f9
-Grey light 2: #f4f2f2
-Grey light 3: #f0eeee
-Grey light 4: #ccc
-Grey dark 1: #333
-Grey dark 2: #777
-Grey dark 3: #999
-*/
 :root {
   --color-primary: #eb2f64;
   --color-primary-light: #FF3366;
@@ -22,7 +9,9 @@ Grey dark 3: #999
   --color-grey-dark-1: #333;
   --color-grey-dark-2: #777;
   --color-grey-dark-3: #999;
-  --shadow-dark: 0 2rem 6rem rgba(0,0,0,.3) ; }
+  --shadow-dark: 0 2rem 6rem rgba(0,0,0,.3) ;
+  --shadow-light: 0 2rem 5rem rgba(0,0,0,.06) ;
+  --line: 1px solid var(--color-grey-light-2) ; }
 
 * {
   margin: 0;
@@ -188,7 +177,7 @@ body {
 .overview {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid var(--color-grey-light-2); }
+  border-bottom: var(--line); }
   .overview__heading {
     font-size: 2.25rem;
     font-weight: 300;
@@ -280,5 +269,22 @@ body {
 
 .hotel-view {
   background-color: #fff;
-  height: 80rem;
+  flex: 1; }
+
+.detail {
+  display: flex;
+  padding: 4.5rem;
+  background: var(--color-grey-light-1);
+  border-bottom: var(--line); }
+
+.description {
+  font-size: 1.4rem;
+  background-color: #fff;
+  box-shadow: var(--shadow-light);
+  padding: 3rem;
+  flex: 0 0 60%;
+  margin-right: 4.5rem; }
+
+.user-reviews {
+  background-color: yellowgreen;
   flex: 1; }
