@@ -177,6 +177,12 @@ body {
   text-align: center;
   padding: 2.5rem; }
 
+/* GALLERY */
+.gallery {
+  display: flex; }
+  .gallery__photo {
+    width: 100%; }
+
 .container {
   max-width: 120rem;
   margin: 8rem auto;
