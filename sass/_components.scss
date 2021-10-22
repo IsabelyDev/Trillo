@@ -125,6 +125,11 @@
     list-style: none;
     margin-top: 3.5rem;
 
+    @media only screen and (max-width:$bp-medium){
+        display: flex;
+        margin: 0;
+    }
+
     &__item {
         position: relative;
         list-style: none;
@@ -132,6 +137,14 @@
 
         &:not(:last-child){
             margin-bottom: .5rem;
+
+            @media only screen and (max-width:$bp-medium){
+                margin: 0;
+            }
+        }
+
+        @media only screen and (max-width:$bp-medium){
+            flex: 1;
         }
 
     }
@@ -173,6 +186,11 @@
         display: flex;
         align-items: center;
 
+        @media only screen and (max-width:$bp-medium){
+            justify-content: center;
+            padding: 2rem;
+        }
+
     }
 
     &__icon {
@@ -191,6 +209,10 @@
     color: var(--color-grey-light-4);
     text-align: center;
     padding: 2.5rem;
+
+    @media only screen and (max-width:$bp-medium){
+        display: none;
+    }
 }
 
 /* GALLERY */
@@ -198,7 +220,7 @@
 
     display: flex;
 
-    &__photo{
+    &__photo {
         width: 100%;
         display: block;
     }
@@ -374,6 +396,10 @@
         margin-right: auto;
     }
 
+    &__friends {
+        display: flex;
+    }
+
     &__photo{
         box-sizing: content-box;
         height: 4rem;
@@ -382,7 +408,7 @@
         border: 3px solid #fff;
 
         &:not(:last-child){
-            margin-right: -1.5rem;
+            margin-right: -2rem;
         }
     }
 }
@@ -397,6 +423,11 @@
 
     position: relative;
     overflow: hidden;
+
+    @media only screen and (max-width: $bp-medium){
+        padding: 2rem;
+        margin-bottom: 3rem;
+    }
 
     &__text{
         margin-bottom: 2rem;
@@ -457,6 +488,10 @@
 .cta {
     padding: 3.5rem 0;
     text-align: center;
+
+    @media only screen and (max-width: $bp-medium){
+        padding: 2.5rem 0;
+    }
 
     &__book-now{
         font-size: 2rem;
