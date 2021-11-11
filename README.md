@@ -1,22 +1,31 @@
 <h1 align="center"> TRILLO </h1>
 
-<h1> 
-    Versão desktop
-    <img src="./img/desktop.png" /> 
-</h1>
-
-<h1> 
-    Versão Mobile
-    <img src="./img/mobile.png" /> 
-</h1>
-
 # Indice
 
+- [ Versão desktop ](#Versão-desktop)
+- [ Versão Mobile ](#Versão-Mobile)
+- [ Demonstração ](#Demonstração)
 - [ About ](#-About)
 - [ Tecnologias utilizadas ](#-Tecnologias-utilizadas)
 - [ Como baixar o projeto ](#-Baixar-o-projeto)
 
 ---
+
+### Versão desktop
+<h1> 
+    <img src="./img/desktop.png" /> 
+</h1>
+
+### Versão Mobile
+<h1> 
+    <img src="./img/mobile.png" /> 
+</h1>
+
+### Demonstração
+<h1> 
+    <img src="./img/trillo.gif" /> 
+</h1>
+
 ### 🌴 About
 
 Aplicação com foco em flexbox
